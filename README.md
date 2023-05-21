@@ -1,4 +1,4 @@
-## Copilot Chat Sudoko
+## Copilot Chat Sudoku
 
 Making Copilot chat build a Sudoku game.
 
