@@ -27,7 +27,3 @@ table {
 td {
   @apply w-12 h-12 text-center align-middle border border-gray-300 rounded-lg;
 }
-
-input[type="number"] {
-  @apply w-full h-full bg-transparent text-lg font-bold text-gray-700;
-}

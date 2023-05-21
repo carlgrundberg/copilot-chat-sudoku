@@ -107,10 +107,10 @@ export default function Sudoku() {
                 {row.map((cell, colIndex) => (
                   <td
                     key={colIndex}
-                    className={`px-4 py-2 text-center align-middle border border-gray-300 rounded-lg bg-white shadow-md transition-colors duration-300 hover:bg-gray-100 ${
+                    className={`px-4 py-2 text-center align-middle border border-gray-300 rounded-lg shadow-md transition-colors duration-300 hover:bg-gray-100 ${
                       (rowIndex + 1) % 3 === 0 && 'border-b-4'
                     } ${(colIndex + 1) % 3 === 0 && 'border-r-4'} ${
-                      conflictingCells.some((c) => c[0] === rowIndex && c[1] === colIndex) && 'bg-red-500'
+                      conflictingCells.some((c) => c[0] === rowIndex && c[1] === colIndex) ? 'bg-red-500' : 'bg-white'
                     }`}
                     onClick={() => handleCellClick(rowIndex, colIndex)}
                   >
